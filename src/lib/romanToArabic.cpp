@@ -35,6 +35,10 @@ int validation(char roman[], int i){
     atual_offset2 = roman[i+2];
     atual_offset3 = roman[i+3];
 
+    if(letterValue(atual) == -1){
+        return isFalse;
+    }
+
     if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
         return isFalse;
     } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
