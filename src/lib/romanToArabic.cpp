@@ -57,6 +57,7 @@ int validationSum(char roman[], int i){
     return isTrue;
 }
 
+/*
 int validationSub(char roman[], int i){
     char atual, atual_offset1;
 
@@ -65,20 +66,24 @@ int validationSub(char roman[], int i){
 
 
 }
+*/
 
 int romanToArabic(char roman[]){
     int tamanho, i, arabic = 0;
-    char atual;
+    char atual, atual_offset1;
 
     tamanho = strlen(roman);
     for(i=0;i<tamanho;i++){
+        atual = roman[i];
+        atual_offset1 = roman[i+1];
 
         if(!validationSum(roman, i)){
             return -1;
-        } else {
-            atual = roman[i];
-            printf("Atual: %c\n", atual);
+        } else if(letterValue(atual) >= letterValue(atual_offset1)){
             arabic += letterValue(atual);
+        } else{
+            arabic = arabic + letterValue(atual_offset1) - letterValue(atual);
+            i++;
         }
 
 
