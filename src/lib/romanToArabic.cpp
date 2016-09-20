@@ -70,11 +70,13 @@ int romanToArabic(char roman[]){
 
         if(!validation(roman, i)){
             return -1;
+        } else {
+            atual = roman[i];
+            printf("Atual: %c\n", atual);
+            arabic += letterValue(atual);
         }
 
-        atual = roman[i];
-        printf("Atual: %c\n", atual);
-        arabic += letterValue(atual);
+
     }
 
     printf("Arabic: %d\n", arabic);
