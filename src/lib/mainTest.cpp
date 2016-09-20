@@ -7,6 +7,7 @@
 
 TEST(Conversion, Single){
 	EXPECT_EQ(1, romanToArabic((char*)"I"));
+	EXPECT_EQ(5, romanToArabic((char*)"V"));
 }
 
 
