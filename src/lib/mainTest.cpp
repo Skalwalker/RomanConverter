@@ -54,6 +54,16 @@ TEST(Conversion, UnexpectedSubtraction){
 	EXPECT_EQ(-1, romanToArabic((char*)"IIX"));
 	EXPECT_EQ(-1, romanToArabic((char*)"IM"));
 }
+TEST(Conversion, General){
+	EXPECT_EQ(188, romanToArabic((char*)"CLXXXVIII"));
+	EXPECT_EQ(200, romanToArabic((char*)"CC"));
+	EXPECT_EQ(838, romanToArabic((char*)"DCCCXXXVIII"));
+	EXPECT_EQ(1487, romanToArabic((char*)"MCDLXXXVII"));
+	EXPECT_EQ(2347, romanToArabic((char*)"MMCCCXLVII"));
+	EXPECT_EQ(-1, romanToArabic((char*)"iV"));
+	EXPECT_EQ(2318, romanToArabic((char*)"MMCCCXVIII"));
+	EXPECT_EQ(-1, romanToArabic((char*)" "));
+}
 
 
 
