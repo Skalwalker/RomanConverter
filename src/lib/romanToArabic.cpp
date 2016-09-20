@@ -89,7 +89,5 @@ int romanToArabic(char roman[]){
 
     }
 
-    printf("Arabic: %d\n", arabic);
-
     return arabic;
 }
