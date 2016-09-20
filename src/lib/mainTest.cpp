@@ -32,6 +32,8 @@ TEST(Conversion, UnexpectedAddition){
 	EXPECT_EQ(-1, romanToArabic((char*)"DD"));
 	EXPECT_EQ(-1, romanToArabic((char*)"VV"));
 	EXPECT_EQ(-1, romanToArabic((char*)"LL"));
+	EXPECT_EQ(-1, romanToArabic((char*)"LL1"));
+	EXPECT_EQ(-1, romanToArabic((char*)"V3V"));
 }
 
 
