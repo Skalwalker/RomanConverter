@@ -1,2 +1,2 @@
 # tddRoman
-Test Driven Development for number conversion from romanic to arabic
+Test Driven Development for number conversion from Roman to Arabic
