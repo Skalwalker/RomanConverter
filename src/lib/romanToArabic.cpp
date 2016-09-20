@@ -45,7 +45,7 @@ int validation(char roman[], int i){
         return isFalse;
     } else if((atual == 'D') && (atual_offset1 == 'D')){
         return isFalse;
-    } else {
+    }  else {
         return isTrue;
     }
 
