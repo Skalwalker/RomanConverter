@@ -24,6 +24,9 @@ TEST(Conversion, Addition){
 	EXPECT_EQ(3000, romanToArabic((char*)"MMM"));
 	EXPECT_EQ(2678, romanToArabic((char*)"MMDCLXXVIII"));
 }
+TEST(Conversion, UnexpectedAddition){
+	EXPECT_EQ(-1, romanToArabic((char*)"IIII"));
+}
 
 
 
