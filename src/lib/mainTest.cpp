@@ -28,6 +28,7 @@ TEST(Conversion, UnexpectedAddition){
 	EXPECT_EQ(-1, romanToArabic((char*)"IIII"));
 	EXPECT_EQ(-1, romanToArabic((char*)"XXXX"));
 	EXPECT_EQ(-1, romanToArabic((char*)"CCCC"));
+	EXPECT_EQ(-1, romanToArabic((char*)"MMMM"));
 }
 
 
