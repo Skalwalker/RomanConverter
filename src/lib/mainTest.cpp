@@ -46,6 +46,13 @@ TEST(Conversion, Subtraction){
 }
 TEST(Conversion, UnexpectedSubtraction){
 	EXPECT_EQ(-1, romanToArabic((char*)"LCC"));
+	EXPECT_EQ(-1, romanToArabic((char*)"LLC"));
+	EXPECT_EQ(-1, romanToArabic((char*)"DDM"));
+	EXPECT_EQ(-1, romanToArabic((char*)"DM"));
+	EXPECT_EQ(-1, romanToArabic((char*)"IVIV"));
+	EXPECT_EQ(-1, romanToArabic((char*)"IIV"));
+	EXPECT_EQ(-1, romanToArabic((char*)"IIX"));
+	EXPECT_EQ(-1, romanToArabic((char*)"IM"));
 }
 
 

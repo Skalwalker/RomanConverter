@@ -57,31 +57,53 @@ int validationSum(char roman[], int i){
     return isTrue;
 }
 
-/*
+
 int validationSub(char roman[], int i){
+    int isFalse = 0;
+    int isTrue = 1;
+
     char atual, atual_offset1;
 
     atual = roman[i];
     atual_offset1 = roman[i+1];
 
+    if(letterValue(atual_offset1)/2 == letterValue(atual)){
+        return isFalse;
+    }
+    if(letterValue(atual_offset1) > 10*letterValue(atual)){
+        return isFalse;
+    }
+    if((atual == roman[i+2])&&(atual_offset1 == roman[i+3])){
+        return isFalse;
+    }
+    if((atual == atual_offset1)&&(letterValue(roman[i+2])>letterValue(atual))){
+        return isFalse;
+    }
 
+    return isTrue;
 }
-*/
+
 
 int romanToArabic(char roman[]){
     int tamanho, i, arabic = 0;
     char atual, atual_offset1;
 
     tamanho = strlen(roman);
-    for(i=0;i<tamanho;i++){
+    for(i=0;(i<tamanho) && (roman[i] != '\0');i++){
         atual = roman[i];
         atual_offset1 = roman[i+1];
 
         if(!validationSum(roman, i)){
             return -1;
         } else if(letterValue(atual) >= letterValue(atual_offset1)){
+            if(!validationSub(roman, i)){
+                return -1;
+            }
             arabic += letterValue(atual);
         } else{
+            if(!validationSub(roman, i)){
+                return -1;
+            }
             arabic = arabic + letterValue(atual_offset1) - letterValue(atual);
             i++;
         }

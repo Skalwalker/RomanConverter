@@ -5,82 +5,116 @@
         -:    0:Programs:1
         -:    1:#include "romanToArabic.hpp"
         -:    2:
-       99:    3:int letterValue(char l){
-       99:    4:    switch (l) {
+      563:    3:int letterValue(char l){
+      563:    4:    switch (l) {
         -:    5:        case 'I':
-       21:    6:            return 1;
+      110:    6:            return 1;
         -:    7:        case 'V':
-       11:    8:            return 5;
+       41:    8:            return 5;
         -:    9:        case 'X':
-       13:   10:            return 10;
+       81:   10:            return 10;
         -:   11:        case 'L':
-        8:   12:            return 50;
+       32:   12:            return 50;
         -:   13:        case 'C':
-       11:   14:            return 100;
+       93:   14:            return 100;
         -:   15:        case 'D':
-        5:   16:            return 500;
+       29:   16:            return 500;
         -:   17:        case 'M':
-       23:   18:            return 1000;
+      115:   18:            return 1000;
         -:   19:        default:
-        7:   20:            return -1;
+       62:   20:            return -1;
         -:   21:    }
         -:   22:}
         -:   23:
-       57:   24:int validation(char roman[], int i){
+       81:   24:int validationSum(char roman[], int i){
         -:   25:    /*
         -:   26:        Impossivel somar mais de 3 I, X, C e M
         -:   27:    */
-       57:   28:    int isFalse = 0;
-       57:   29:    int isTrue = 1;
+       81:   28:    int isFalse = 0;
+       81:   29:    int isTrue = 1;
         -:   30:
         -:   31:    char atual, atual_offset1, atual_offset2, atual_offset3;
         -:   32:
-       57:   33:    atual = roman[i];
-       57:   34:    atual_offset1 = roman[i+1];
-       57:   35:    atual_offset2 = roman[i+2];
-       57:   36:    atual_offset3 = roman[i+3];
+       81:   33:    atual = roman[i];
+       81:   34:    atual_offset1 = roman[i+1];
+       81:   35:    atual_offset2 = roman[i+2];
+       81:   36:    atual_offset3 = roman[i+3];
         -:   37:
-       57:   38:    if(letterValue(atual) == -1){
+       81:   38:    if(letterValue(atual) == -1){
         7:   39:        return isFalse;
         -:   40:    }
         -:   41:
-       50:   42:    if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
+       74:   42:    if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
         1:   43:        return isFalse;
-       49:   44:    } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
+       73:   44:    } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
         1:   45:        return isFalse;
-       48:   46:    } else if((atual == 'C') && (atual_offset1 == 'C') && (atual_offset2 == 'C') && atual_offset3 == 'C'){
+       72:   46:    } else if((atual == 'C') && (atual_offset1 == 'C') && (atual_offset2 == 'C') && atual_offset3 == 'C'){
         1:   47:        return isFalse;
-       47:   48:    } else if((atual == 'M') && (atual_offset1 == 'M') && (atual_offset2 == 'M') && atual_offset3 == 'M'){
+       71:   48:    } else if((atual == 'M') && (atual_offset1 == 'M') && (atual_offset2 == 'M') && atual_offset3 == 'M'){
         1:   49:        return isFalse;
-       46:   50:    } else if((atual == 'D') && (atual_offset1 == 'D')){
-        1:   51:        return isFalse;
-       45:   52:    } else if((atual == 'V') && (atual_offset1 == 'V')){
+       70:   50:    } else if((atual == 'D') && (atual_offset1 == 'D')){
+        2:   51:        return isFalse;
+       68:   52:    } else if((atual == 'V') && (atual_offset1 == 'V')){
         1:   53:        return isFalse;
-       44:   54:    } else if((atual == 'L') && (atual_offset1 == 'L')){
-        2:   55:        return isFalse;
+       67:   54:    } else if((atual == 'L') && (atual_offset1 == 'L')){
+        3:   55:        return isFalse;
         -:   56:    }
-       42:   57:    return isTrue;
+       64:   57:    return isTrue;
         -:   58:}
         -:   59:
-       28:   60:int romanToArabic(char roman[]){
-       28:   61:    int tamanho, i, arabic = 0;
-        -:   62:    char atual;
-        -:   63:
-       28:   64:    tamanho = strlen(roman);
-       70:   65:    for(i=0;i<tamanho;i++){
+        -:   60:
+       64:   61:int validationSub(char roman[], int i){
+       64:   62:    int isFalse = 0;
+       64:   63:    int isTrue = 1;
+        -:   64:
+        -:   65:    char atual, atual_offset1;
         -:   66:
-       57:   67:        if(!validation(roman, i)){
-       15:   68:            return -1;
-        -:   69:        } else {
-       42:   70:            atual = roman[i];
-       42:   71:            printf("Atual: %c\n", atual);
-       42:   72:            arabic += letterValue(atual);
-        -:   73:        }
-        -:   74:
-        -:   75:
-        -:   76:    }
-        -:   77:
-       13:   78:    printf("Arabic: %d\n", arabic);
-        -:   79:
-       13:   80:    return arabic;
-        -:   81:}
+       64:   67:    atual = roman[i];
+       64:   68:    atual_offset1 = roman[i+1];
+        -:   69:
+       64:   70:    if(letterValue(atual_offset1)/2 == letterValue(atual)){
+        2:   71:        return isFalse;
+        -:   72:    }
+       62:   73:    if(letterValue(atual_offset1) > 10*letterValue(atual)){
+        1:   74:        return isFalse;
+        -:   75:    }
+       61:   76:    if((atual == roman[i+2])&&(atual_offset1 == roman[i+3])){
+        1:   77:        return isFalse;
+        -:   78:    }
+       60:   79:    if((atual == atual_offset1)&&(letterValue(roman[i+2])>letterValue(atual))){
+        2:   80:        return isFalse;
+        -:   81:    }
+        -:   82:
+       58:   83:    return isTrue;
+        -:   84:}
+        -:   85:
+        -:   86:
+       41:   87:int romanToArabic(char roman[]){
+       41:   88:    int tamanho, i, arabic = 0;
+        -:   89:    char atual, atual_offset1;
+        -:   90:
+       41:   91:    tamanho = strlen(roman);
+       99:   92:    for(i=0;(i<tamanho) && (roman[i] != '\0');i++){
+       81:   93:        atual = roman[i];
+       81:   94:        atual_offset1 = roman[i+1];
+        -:   95:
+       81:   96:        if(!validationSum(roman, i)){
+       17:   97:            return -1;
+       64:   98:        } else if(letterValue(atual) >= letterValue(atual_offset1)){
+       54:   99:            if(!validationSub(roman, i)){
+        2:  100:                return -1;
+        -:  101:            }
+       52:  102:            arabic += letterValue(atual);
+        -:  103:        } else{
+       10:  104:            if(!validationSub(roman, i)){
+        4:  105:                return -1;
+        -:  106:            }
+        6:  107:            arabic = arabic + letterValue(atual_offset1) - letterValue(atual);
+        6:  108:            i++;
+        -:  109:        }
+        -:  110:
+        -:  111:
+        -:  112:    }
+        -:  113:
+       18:  114:    return arabic;
+        -:  115:}
