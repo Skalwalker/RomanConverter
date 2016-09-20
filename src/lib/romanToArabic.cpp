@@ -4,6 +4,8 @@ int valorLetra(char l){
     switch (l) {
         case 'I':
             return 1;
+        case 'V':
+            return 5;
     }
 }
 
@@ -12,12 +14,13 @@ int romanToArabic(char roman[]){
     char atual;
 
     tamanho = strlen(roman);
-    for(i=0;i<tamanho+1;i++){
+    for(i=0;i<tamanho;i++){
         atual = roman[i];
-
-        atual = valorLetra(i);
+        printf("Atual: %c\n", atual);
+        arabic = valorLetra(atual);
     }
-    arabic = atual;
+
+    printf("Arabic: %d\n", arabic);
 
     return arabic;
 }
