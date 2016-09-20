@@ -22,14 +22,14 @@ int valorLetra(char l){
 }
 
 int romanToArabic(char roman[]){
-    int tamanho, i, arabic;
+    int tamanho, i, arabic = 0;
     char atual;
 
     tamanho = strlen(roman);
     for(i=0;i<tamanho;i++){
         atual = roman[i];
         printf("Atual: %c\n", atual);
-        arabic = valorLetra(atual);
+        arabic += valorLetra(atual);
     }
 
     printf("Arabic: %d\n", arabic);
