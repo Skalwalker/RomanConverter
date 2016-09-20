@@ -14,6 +14,8 @@ int valorLetra(char l){
             return 100;
         case 'M':
             return 1000;
+        case 'D':
+            return 500;
         default:
             return -1;
     }
