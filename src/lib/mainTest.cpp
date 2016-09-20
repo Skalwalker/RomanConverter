@@ -12,6 +12,8 @@ TEST(Conversion, Single){
 	EXPECT_EQ(-1, romanToArabic((char*)"i"));
 	EXPECT_EQ(10, romanToArabic((char*)"X"));
 	EXPECT_EQ(50, romanToArabic((char*)"L"));
+	EXPECT_EQ(100, romanToArabic((char*)"C"));
+
 
 }
 
