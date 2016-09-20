@@ -19,6 +19,10 @@ TEST(Conversion, Single){
 TEST(Conversion, Addition){
 	EXPECT_EQ(2, romanToArabic((char*)"II"));
 	EXPECT_EQ(1007, romanToArabic((char*)"MVII"));
+	EXPECT_EQ(7, romanToArabic((char*)"VII"));
+	EXPECT_EQ(1280, romanToArabic((char*)"MCCLXXX"));
+	EXPECT_EQ(3000, romanToArabic((char*)"MMM"));
+	EXPECT_EQ(2678, romanToArabic((char*)"MMDCLXXVIII"));
 }
 
 
