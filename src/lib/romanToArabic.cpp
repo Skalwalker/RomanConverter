@@ -37,6 +37,8 @@ int validation(char roman[], int i){
 
     if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
         return isFalse;
+    } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
+        return isFalse;
     } else {
         return isTrue;
     }
