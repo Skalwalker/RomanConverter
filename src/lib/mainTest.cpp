@@ -44,6 +44,9 @@ TEST(Conversion, Subtraction){
 	EXPECT_EQ(2290, romanToArabic((char*)"MMCCXC"));
 	EXPECT_EQ(2990, romanToArabic((char*)"MMCMXC"));
 }
+TEST(Conversion, UnexpectedSubtraction){
+	EXPECT_EQ(-1, romanToArabic((char*)"LCC"));
+}
 
 
 
