@@ -1,1 +1,1 @@
-int romanToArabic();
+int romanToArabic(char roman[]);

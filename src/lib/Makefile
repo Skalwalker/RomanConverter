@@ -5,7 +5,7 @@ CXXFLAGS=-I$(IDIR)
 ODIR=obj
 LDIR =../lib
 
-LIBS=-lm -lgtest -lpthread -lgtest_main
+LIBS=-lm -lgtest -lpthread -lgtest_main -ftest-coverage -fprofile-arcs
 
 _DEPS = romanToArabic.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
