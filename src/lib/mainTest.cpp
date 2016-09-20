@@ -31,6 +31,7 @@ TEST(Conversion, UnexpectedAddition){
 	EXPECT_EQ(-1, romanToArabic((char*)"MMMM"));
 	EXPECT_EQ(-1, romanToArabic((char*)"DD"));
 	EXPECT_EQ(-1, romanToArabic((char*)"VV"));
+	EXPECT_EQ(-1, romanToArabic((char*)"LL"));
 }
 
 
