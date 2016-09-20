@@ -21,7 +21,7 @@ int letterValue(char l){
     }
 }
 
-int validation(char roman[], int i){
+int validationSum(char roman[], int i){
     /*
         Impossivel somar mais de 3 I, X, C e M
     */
@@ -53,10 +53,15 @@ int validation(char roman[], int i){
         return isFalse;
     } else if((atual == 'L') && (atual_offset1 == 'L')){
         return isFalse;
-    } else {
-        return isTrue;
     }
+    return isTrue;
+}
 
+int validationSub(char roman[], int i){
+    char atual, atual_offset1;
+
+    atual = roman[i];
+    atual_offset1 = roman[i+1];
 
 
 }
@@ -68,7 +73,7 @@ int romanToArabic(char roman[]){
     tamanho = strlen(roman);
     for(i=0;i<tamanho;i++){
 
-        if(!validation(roman, i)){
+        if(!validationSum(roman, i)){
             return -1;
         } else {
             atual = roman[i];

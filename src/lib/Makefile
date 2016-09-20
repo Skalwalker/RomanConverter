@@ -1,12 +1,13 @@
 IDIR =../include
 CXX=g++
-CXXFLAGS=-I$(IDIR)
+CXXFLAGS=-I$(IDIR) -g -Wall -ftest-coverage -fprofile-arcs
+
 
 ODIR=obj
 LDIR =../lib
 
-LIBS=-lm -lgtest -lpthread -lgtest_main -ftest-coverage -fprofile-arcs
 
+LIBS=-lm -lgtest -lpthread -lgtest_main --coverage -lgcov
 _DEPS = romanToArabic.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
