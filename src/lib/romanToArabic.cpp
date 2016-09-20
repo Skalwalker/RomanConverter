@@ -12,10 +12,10 @@ int valorLetra(char l){
             return 50;
         case 'C':
             return 100;
-        case 'M':
-            return 1000;
         case 'D':
             return 500;
+        case 'M':
+            return 1000;
         default:
             return -1;
     }
