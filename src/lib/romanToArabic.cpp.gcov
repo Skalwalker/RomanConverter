@@ -1,120 +1,120 @@
         -:    0:Source:romanToArabic.cpp
         -:    0:Graph:obj/romanToArabic.gcno
         -:    0:Data:obj/romanToArabic.gcda
-        -:    0:Runs:1
-        -:    0:Programs:1
+        -:    0:Runs:2
+        -:    0:Programs:2
         -:    1:#include "romanToArabic.hpp"
         -:    2:
-      563:    3:int letterValue(char l){
-      563:    4:    switch (l) {
+     1576:    3:int letterValue(char l){
+     1576:    4:    switch (l) {
         -:    5:        case 'I':
-      110:    6:            return 1;
+      335:    6:            return 1;
         -:    7:        case 'V':
-       41:    8:            return 5;
+      122:    8:            return 5;
         -:    9:        case 'X':
-       81:   10:            return 10;
+      262:   10:            return 10;
         -:   11:        case 'L':
-       32:   12:            return 50;
+       81:   12:            return 50;
         -:   13:        case 'C':
-       93:   14:            return 100;
+      296:   14:            return 100;
         -:   15:        case 'D':
-       29:   16:            return 500;
+       67:   16:            return 500;
         -:   17:        case 'M':
-      115:   18:            return 1000;
+      263:   18:            return 1000;
         -:   19:        default:
-       62:   20:            return -1;
+      150:   20:            return -1;
         -:   21:    }
         -:   22:}
         -:   23:
-       81:   24:int validationSum(char roman[], int i){
+      214:   24:int validationSum(char roman[], int i){
         -:   25:    /*
         -:   26:        Impossivel somar mais de 3 I, X, C e M
         -:   27:    */
-       81:   28:    int isFalse = 0;
-       81:   29:    int isTrue = 1;
+      214:   28:    int isFalse = 0;
+      214:   29:    int isTrue = 1;
         -:   30:
         -:   31:    char atual, atual_offset1, atual_offset2, atual_offset3;
         -:   32:
-       81:   33:    atual = roman[i];
-       81:   34:    atual_offset1 = roman[i+1];
-       81:   35:    atual_offset2 = roman[i+2];
-       81:   36:    atual_offset3 = roman[i+3];
+      214:   33:    atual = roman[i];
+      214:   34:    atual_offset1 = roman[i+1];
+      214:   35:    atual_offset2 = roman[i+2];
+      214:   36:    atual_offset3 = roman[i+3];
         -:   37:
-       81:   38:    if(letterValue(atual) == -1){
-        7:   39:        return isFalse;
+      214:   38:    if(letterValue(atual) == -1){
+       16:   39:        return isFalse;
         -:   40:    }
         -:   41:
-       74:   42:    if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
-        1:   43:        return isFalse;
-       73:   44:    } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
-        1:   45:        return isFalse;
-       72:   46:    } else if((atual == 'C') && (atual_offset1 == 'C') && (atual_offset2 == 'C') && atual_offset3 == 'C'){
-        1:   47:        return isFalse;
-       71:   48:    } else if((atual == 'M') && (atual_offset1 == 'M') && (atual_offset2 == 'M') && atual_offset3 == 'M'){
-        1:   49:        return isFalse;
-       70:   50:    } else if((atual == 'D') && (atual_offset1 == 'D')){
-        2:   51:        return isFalse;
-       68:   52:    } else if((atual == 'V') && (atual_offset1 == 'V')){
-        1:   53:        return isFalse;
-       67:   54:    } else if((atual == 'L') && (atual_offset1 == 'L')){
-        3:   55:        return isFalse;
+      198:   42:    if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
+        2:   43:        return isFalse;
+      196:   44:    } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
+        2:   45:        return isFalse;
+      194:   46:    } else if((atual == 'C') && (atual_offset1 == 'C') && (atual_offset2 == 'C') && atual_offset3 == 'C'){
+        2:   47:        return isFalse;
+      192:   48:    } else if((atual == 'M') && (atual_offset1 == 'M') && (atual_offset2 == 'M') && atual_offset3 == 'M'){
+        2:   49:        return isFalse;
+      190:   50:    } else if((atual == 'D') && (atual_offset1 == 'D')){
+        4:   51:        return isFalse;
+      186:   52:    } else if((atual == 'V') && (atual_offset1 == 'V')){
+        2:   53:        return isFalse;
+      184:   54:    } else if((atual == 'L') && (atual_offset1 == 'L')){
+        6:   55:        return isFalse;
         -:   56:    }
-       64:   57:    return isTrue;
+      178:   57:    return isTrue;
         -:   58:}
         -:   59:
         -:   60:
-       64:   61:int validationSub(char roman[], int i){
-       64:   62:    int isFalse = 0;
-       64:   63:    int isTrue = 1;
+      178:   61:int validationSub(char roman[], int i){
+      178:   62:    int isFalse = 0;
+      178:   63:    int isTrue = 1;
         -:   64:
         -:   65:    char atual, atual_offset1;
         -:   66:
-       64:   67:    atual = roman[i];
-       64:   68:    atual_offset1 = roman[i+1];
+      178:   67:    atual = roman[i];
+      178:   68:    atual_offset1 = roman[i+1];
         -:   69:
-       64:   70:    if(letterValue(atual_offset1)/2 == letterValue(atual)){
-        2:   71:        return isFalse;
+      178:   70:    if(letterValue(atual_offset1)/2 == letterValue(atual)){
+        4:   71:        return isFalse;
         -:   72:    }
-       62:   73:    if(letterValue(atual_offset1) > 10*letterValue(atual)){
-        1:   74:        return isFalse;
+      174:   73:    if(letterValue(atual_offset1) > 10*letterValue(atual)){
+        2:   74:        return isFalse;
         -:   75:    }
-       61:   76:    if((atual == roman[i+2])&&(atual_offset1 == roman[i+3])){
-        1:   77:        return isFalse;
+      172:   76:    if((atual == roman[i+2])&&(atual_offset1 == roman[i+3])){
+        2:   77:        return isFalse;
         -:   78:    }
-       60:   79:    if((atual == atual_offset1)&&(letterValue(roman[i+2])>letterValue(atual))){
-        2:   80:        return isFalse;
+      170:   79:    if((atual == atual_offset1)&&(letterValue(roman[i+2])>letterValue(atual))){
+        4:   80:        return isFalse;
         -:   81:    }
         -:   82:
-       58:   83:    return isTrue;
+      166:   83:    return isTrue;
         -:   84:}
         -:   85:
         -:   86:
-       41:   87:int romanToArabic(char roman[]){
-       41:   88:    int tamanho, i, arabic = 0;
+       90:   87:int romanToArabic(char roman[]){
+       90:   88:    int tamanho, i, arabic = 0;
         -:   89:    char atual, atual_offset1;
         -:   90:
-       41:   91:    tamanho = strlen(roman);
-       99:   92:    for(i=0;(i<tamanho) && (roman[i] != '\0');i++){
-       81:   93:        atual = roman[i];
-       81:   94:        atual_offset1 = roman[i+1];
+       90:   91:    tamanho = strlen(roman);
+      256:   92:    for(i=0;(i<tamanho) && (roman[i] != '\0');i++){
+      214:   93:        atual = roman[i];
+      214:   94:        atual_offset1 = roman[i+1];
         -:   95:
-       81:   96:        if(!validationSum(roman, i)){
-       17:   97:            return -1;
-       64:   98:        } else if(letterValue(atual) >= letterValue(atual_offset1)){
-       54:   99:            if(!validationSub(roman, i)){
-        2:  100:                return -1;
+      214:   96:        if(!validationSum(roman, i)){
+       36:   97:            return -1;
+      178:   98:        } else if(letterValue(atual) >= letterValue(atual_offset1)){
+      156:   99:            if(!validationSub(roman, i)){
+        4:  100:                return -1;
         -:  101:            }
-       52:  102:            arabic += letterValue(atual);
+      152:  102:            arabic += letterValue(atual);
         -:  103:        } else{
-       10:  104:            if(!validationSub(roman, i)){
-        4:  105:                return -1;
+       22:  104:            if(!validationSub(roman, i)){
+        8:  105:                return -1;
         -:  106:            }
-        6:  107:            arabic = arabic + letterValue(atual_offset1) - letterValue(atual);
-        6:  108:            i++;
+       14:  107:            arabic = arabic + letterValue(atual_offset1) - letterValue(atual);
+       14:  108:            i++;
         -:  109:        }
         -:  110:
         -:  111:
         -:  112:    }
         -:  113:
-       18:  114:    return arabic;
+       42:  114:    return arabic;
         -:  115:}

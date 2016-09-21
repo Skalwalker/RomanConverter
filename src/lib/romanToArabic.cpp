@@ -1,5 +1,17 @@
+/*!
+   \file romanToArabic
+   \brief Arquivo que contem as devidas funcoes para converter os numeros de romanos para arabicos
+   \author Renato Nobre
+   \date 20/09/2016
+*/
+
 #include "romanToArabic.hpp"
 
+/*!
+   \brief Transforma a letra do romanico para arabicos
+   @param Caracter para conversao
+   \return O valor respectivo em inteiro
+*/
 int letterValue(char l){
     switch (l) {
         case 'I':
@@ -21,6 +33,12 @@ int letterValue(char l){
     }
 }
 
+/*!
+   \brief Valida os casos de soma
+   @param Vetor de caracteres a ser transformado
+   @param Valor inteiro do indice do vetor
+   \return Se ocorreu um erro ou nao
+*/
 int validationSum(char roman[], int i){
     /*
         Impossivel somar mais de 3 I, X, C e M
@@ -57,7 +75,12 @@ int validationSum(char roman[], int i){
     return isTrue;
 }
 
-
+/*!
+   \brief Valida os casos de subtracao
+   @param Vetor de caracteres a ser transformado
+   @param Valor inteiro do indice do vetor
+   \return Se ocorreu um erro ou nao
+*/
 int validationSub(char roman[], int i){
     int isFalse = 0;
     int isTrue = 1;
@@ -83,8 +106,12 @@ int validationSub(char roman[], int i){
     return isTrue;
 }
 
-
-int romanToArabic(char roman[]){
+/*!
+   \brief Transforma o vetor de caracteres de romano para arabico
+   @param Vetor de caracteres
+   \return Retorna o numero em inteiro
+*/
+int romanToArabic(char roman[30]){
     int tamanho, i, arabic = 0;
     char atual, atual_offset1;
 
