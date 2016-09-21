@@ -1,0 +1,287 @@
+commit 880ec4527690a6b179cc91d08eff3f89492868c3
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 23:05:43 2016 -0300
+
+    Added Doxygen
+
+commit 872d82061144c12d47aa69eb0b2404260281328f
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 20:53:05 2016 -0300
+
+    General Test Passed
+
+commit 9f8cf40d069a6ebb00bd435aed61123c196c0d78
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 18:57:05 2016 -0300
+
+    Passed Test #19
+
+commit 1f21c9c458ad1990cf9ca71d29d8f6fa3870c664
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 17:52:35 2016 -0300
+
+    Failed Test #19
+
+commit 3349faa434a34416dfb8001994ecfc896578c07e
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 17:47:09 2016 -0300
+
+    Passed Test #18 Variations
+
+commit 87dde70bbd495e4d774b5a7eb56d1dee9ea6e1a8
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 17:37:01 2016 -0300
+
+    Fixed Test #18
+
+commit 3285e4926298093f73598ef63ea94c4c824403fd
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 17:30:20 2016 -0300
+
+    Failed Test #18
+
+commit ec57002dd2d32377ac32d3c48692b9034bb411dd
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:23:13 2016 -0300
+
+    Finished PostFix Testing
+
+commit 095e9e8aab861fe1fc9a888279ff9c99406bffe3
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:17:19 2016 -0300
+
+    Passed Test #17
+
+commit b9b903dfdf3f22a774a6d92dd1399245a6dd638d
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:14:56 2016 -0300
+
+    Failed Test #17
+
+commit 838fecbff29f0c80edcceeee793869d8086ce7a9
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:12:42 2016 -0300
+
+    Passed Test #16
+
+commit 94f26dd18703054eaa0f1006844db59deb10e664
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:11:36 2016 -0300
+
+    Failed Test #16
+
+commit e1384fdde20ad174814bc61cfaa2d2b2cd1c7143
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:10:19 2016 -0300
+
+    Passed Test #15
+
+commit 8d71f9acb8127849533710d83f2884e8bcb5ad90
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:09:35 2016 -0300
+
+    Failed Test #15
+
+commit 533a8aded68f3a27d0b50e2308fc50ca4a49239f
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:08:03 2016 -0300
+
+    Passed Test #14
+
+commit 810bf56c6ef421e85d9845f1fa5e74b73d1b2a82
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 16:06:13 2016 -0300
+
+    Failed Test #14
+
+commit ce46feb50ca89738cff7f44ac4188e53d0817d3b
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:54:14 2016 -0300
+
+    Passed Test #13
+
+commit 795f0434b4788c7e08d799c6254e39f7b4903dff
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:53:19 2016 -0300
+
+    Failed Test #13
+
+commit ea9e7cb41f0b61e630b73f555391e9805adaac72
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:52:39 2016 -0300
+
+    Passed Test #12
+
+commit 8d637b15a6ff93846aea89fba4bb8fe55ee3f850
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:51:19 2016 -0300
+
+    Failed Test #12
+
+commit b35741206bbb349149b4ae0416e1577b02fd5e1c
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:50:26 2016 -0300
+
+    Passed Test #11
+
+commit 1daa74837c4a9b26808e3de264565417ea762daa
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:49:25 2016 -0300
+
+    Failed Test #11
+
+commit eea8ae82d29ed56448294b920635b1270f313bce
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:48:27 2016 -0300
+
+    Passed Test #10
+
+commit c071c02a1327006e0165953a697bb3af0de4d726
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:13:58 2016 -0300
+
+    Failed Test #10
+
+commit 4073486d72e11cb508c34e26f674cae08abf48f2
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:12:41 2016 -0300
+
+    More #9 Test Variations Passed
+
+commit 8faf36c900e0b8b7169cdb7716a40b4d88c5b78c
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:09:30 2016 -0300
+
+    Passed Test #9 Variations
+
+commit 7cb1ae286f31837862181b6478eb7b00f7cef7d2
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:07:34 2016 -0300
+
+    Passed Test #9
+
+commit 3d64f137e60ee0b620e9179c9516d0c08285d990
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 15:06:12 2016 -0300
+
+    Failed Test #9
+
+commit ec35bf50e2d4aa9a3f192e8d5642781b80311c76
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:15:33 2016 -0300
+
+    Refactoring Some Code
+
+commit 2423a483d5fa8ea851ebf4e2601787e586e01e61
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:14:31 2016 -0300
+
+    Passed Test #8
+
+commit 363a2b5d8d8fef21462960ae6581455310c88393
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:14:09 2016 -0300
+
+    Failed Test #8
+
+commit 4d2ad8c855ccd09167eb596e62f6f09603974179
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:12:43 2016 -0300
+
+    Passed Test #7
+
+commit f630477c3e7ae7fad70617c3c945280d885dbb47
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:12:11 2016 -0300
+
+    Failed Test #7
+
+commit aa09db5ef0e0eef40254495e14f7b737aec7e448
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:11:18 2016 -0300
+
+    Passed Test #6
+
+commit 361952188021b7fc3a9bf8a8bd363ee4b772d6dc
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:10:32 2016 -0300
+
+    Failed Test #6
+
+commit 5cb4eac5b8629d2eec2f2c102f73036ced8a6017
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:09:50 2016 -0300
+
+    Passed Test #5
+
+commit e76c4f4cf406bfceb0902898ef451a7e1bab1c46
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:09:12 2016 -0300
+
+    Failed Test #5
+
+commit 22b2c026ec1c61a7501f302ce1853ff64daaf923
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:08:26 2016 -0300
+
+    Passed Test #4
+
+commit 31ccca63c943550fc2f711b38047a64097dda3f8
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:07:22 2016 -0300
+
+    Failed Test #4
+
+commit 5e01924192e7b033ae7cc8cb7c0e178fc8a589bb
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:06:39 2016 -0300
+
+    Passed Test #3 Variants
+
+commit fb2bf675076e4c8b9aa834893cbedcdfb92354f3
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:05:36 2016 -0300
+
+    Passed Test #3
+
+commit 33bc8e31f0cdec58b90ef20690693ef788b04b0c
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:05:05 2016 -0300
+
+    Failed Test #3
+
+commit ffe44089dd249794bb9cf733f42168d53c806d76
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 14:02:57 2016 -0300
+
+    Passed Test #2
+
+commit f8472d20ce32a541e91a8235672bba5d041f1da1
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 13:55:15 2016 -0300
+
+    Failed Test #2
+
+commit d89fbfcd515a1c873294e248d8b3751e3f9ab813
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 13:54:33 2016 -0300
+
+    Passed Test #1
+
+commit a801b60039cf37bbbc1e8804b015247aeb07db4a
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 13:42:21 2016 -0300
+
+    Failed Test #1
+
+commit 29eb629480eaa009c143a2805b20d91962e4b697
+Author: Renato Nobre <rekanobre@gmail.com>
+Date:   Tue Sep 20 11:44:57 2016 -0300
+
+    Created files organization
+
+commit 738b020c96a7a1de3a764c6eb9139bcb82a2d24d
+Author: Renato Avellar Nobre <Skalwalker@users.noreply.github.com>
+Date:   Wed Sep 14 16:18:29 2016 -0300
+
+    Initial commit

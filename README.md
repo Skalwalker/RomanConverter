@@ -1,6 +1,5 @@
 # tddRoman
 Test Driven Development for number conversion from Roman to Arabic
-The tdd.png shows a viable approach for TDD.
 
 ## Install
 To install the program you should run the makefile on the directory tddRoman/src/lib
