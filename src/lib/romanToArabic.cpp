@@ -40,9 +40,7 @@ int letterValue(char l){
    \return Se ocorreu um erro ou nao
 */
 int validationSum(char roman[], int i){
-    /*
-        Impossivel somar mais de 3 I, X, C e M
-    */
+
     int isFalse = 0;
     int isTrue = 1;
 
@@ -57,6 +55,10 @@ int validationSum(char roman[], int i){
         return isFalse;
     }
 
+    /*
+        Impossivel somar mais de 3 I, X, C e M
+        Impossivel Somar dois valores em que exista um valor correspondente, D, V, L
+    */
     if((atual == 'I') && (atual_offset1 == 'I') && (atual_offset2 == 'I') && atual_offset3 == 'I'){
         return isFalse;
     } else if((atual == 'X') && (atual_offset1 == 'X') && (atual_offset2 == 'X') && atual_offset3 == 'X'){
@@ -72,6 +74,7 @@ int validationSum(char roman[], int i){
     } else if((atual == 'L') && (atual_offset1 == 'L')){
         return isFalse;
     }
+
     return isTrue;
 }
 
@@ -90,6 +93,13 @@ int validationSub(char roman[], int i){
     atual = roman[i];
     atual_offset1 = roman[i+1];
 
+    /*
+        Impossivel subtrair valores que:
+        1- O menor seja = a metade do maior
+        2- O maior seja 10 * a mais que o menor
+        3- Realizar duas subtracoes seguidas
+        4- Subtrair dois valores iguais consecutivos
+    */
     if(letterValue(atual_offset1)/2 == letterValue(atual)){
         return isFalse;
     }
@@ -116,10 +126,19 @@ int romanToArabic(char roman[30]){
     char atual, atual_offset1;
 
     tamanho = strlen(roman);
+
+    /*
+        Passa pela string até o ultimo elemento
+    */
     for(i=0;(i<tamanho) && (roman[i] != '\0');i++){
         atual = roman[i];
         atual_offset1 = roman[i+1];
 
+        /*
+            Entra em tres possiveis estados, testa a consistencia da soma, senao
+            entra em condicao de soma, senao
+            entra em condicao de subtracao.
+        */
         if(!validationSum(roman, i)){
             return -1;
         } else if(letterValue(atual) >= letterValue(atual_offset1)){
