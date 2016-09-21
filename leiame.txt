@@ -1,0 +1,5 @@
+To install the program you should run the makefile on the directory tddRoman/src/lib
+after that execute the file mainTest.
+
+Para compliar o programa, execute o makefile no diretório tddRoman/src/lib, após isso
+execute o arquivo mainTest
